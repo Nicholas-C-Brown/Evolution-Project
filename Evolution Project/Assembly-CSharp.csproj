@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Creature.cs" />
+    <Compile Include="Assets\Scripts\Food.cs" />
     <Compile Include="Assets\Scripts\InitCreatures.cs" />
+    <Compile Include="Assets\Scripts\InitFood.cs" />
     <Compile Include="Assets\Scripts\InitInverted2DEdges.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/SneakyLunatic69/Documents/GitHub/Evolution-Project/Evolution Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
