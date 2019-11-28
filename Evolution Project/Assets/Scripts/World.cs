@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InitInverted2DEdges : MonoBehaviour
+public class World : MonoBehaviour
 {
 
     public int NumEdges;
     public float Radius;
 
     // Use this for initialization
-    void Start()
+    public void Init()
     {
         EdgeCollider2D edgeCollider = GetComponent<EdgeCollider2D>();
         Vector2[] points = new Vector2[NumEdges + 1];

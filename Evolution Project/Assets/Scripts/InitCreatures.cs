@@ -10,10 +10,8 @@ public class InitCreatures : MonoBehaviour
 
     public GameObject Prefab;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
-
         for (int i = 0; i < NumCreatures; i++)
         {
             float angle = 2 * Mathf.PI * i / NumCreatures;
@@ -23,7 +21,6 @@ public class InitCreatures : MonoBehaviour
             GameObject newCreature = Instantiate(Prefab);
             newCreature.transform.position = new Vector3(x, y, 1);
         }
-
     }
 
     

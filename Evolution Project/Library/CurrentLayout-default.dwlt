@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 394}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -44,10 +44,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 891
-  m_MinSize: {x: 679, y: 494}
-  m_MaxSize: {x: 14002, y: 14044}
+  m_MinSize: {x: 508, y: 344}
+  m_MaxSize: {x: 12008, y: 8044}
   vertical: 0
-  controlID: 109
+  controlID: 113
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -67,14 +67,14 @@ MonoBehaviour:
     y: 0
     width: 281
     height: 891
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 102, y: 122}
+  m_MaxSize: {x: 4002, y: 4022}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 15}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,9 +93,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 277
-    height: 614
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 615
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -117,17 +117,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 614
+    y: 615
     width: 999
-    height: 277
-  m_MinSize: {x: 232, y: 272}
-  m_MaxSize: {x: 10002, y: 10022}
-  m_ActualView: {fileID: 14}
+    height: 276
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1280
     height: 941
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 394}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -216,10 +216,10 @@ MonoBehaviour:
     y: 0
     width: 999
     height: 891
-  m_MinSize: {x: 404, y: 494}
-  m_MaxSize: {x: 10002, y: 14044}
+  m_MinSize: {x: 406, y: 344}
+  m_MaxSize: {x: 8006, y: 8044}
   vertical: 1
-  controlID: 53
+  controlID: 77
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,11 +240,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 999
-    height: 614
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
+    height: 615
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 54
+  controlID: 55
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,7 +263,7 @@ MonoBehaviour:
     x: 277
     y: 0
     width: 722
-    height: 614
+    height: 615
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 17}
@@ -298,14 +298,14 @@ MonoBehaviour:
     width: 279
     height: 872
   m_ViewDataDictionary: {fileID: 0}
-  progressMessageClearTime: -1
+  progressMessageClearTime: 992.2411939
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 1
-  appManagerProgressHasUpdate: 1
+  repositoryProgressHasUpdate: 0
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -490,11 +490,10 @@ MonoBehaviour:
       tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
-    commitBody: "-Created Creatures, World and WorldController\n-added random movement
-      script to Creatures \n-added creature initialization script to WorldController"
-    commitMessage: Updates
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
+    commitBody: Added WorldController to initialize and reset world for each round
+    commitMessage: World Reseting
     currentBranch: '[master]'
     treeScroll: {x: 0, y: 0}
     treeChanges:
@@ -504,12 +503,203 @@ MonoBehaviour:
       folders:
         keys:
         - Evolution Project
+        - Evolution Project\.vs
+        - Evolution Project\.vs\Evolution Project
+        - Evolution Project\.vs\Evolution Project\v16
+        - Evolution Project\.vs\Evolution Project\v16\Server
+        - Evolution Project\.vs\Evolution Project\v16\Server\sqlite3
+        - Evolution Project\Assets
+        - Evolution Project\Assets\Prefabs
+        - Evolution Project\Assets\Scenes
+        - Evolution Project\Assets\Scripts
         - Evolution Project\Library
+        - Evolution Project\Library\gfu
+        - Evolution Project\Library\gfu\cache
+        - Evolution Project\Library\metadata
+        - Evolution Project\Library\metadata\00
+        - Evolution Project\Library\metadata\1b
+        - Evolution Project\Library\metadata\24
+        - Evolution Project\Library\metadata\72
+        - Evolution Project\Library\metadata\85
+        - Evolution Project\Library\metadata\d5
+        - Evolution Project\Library\ScriptAssemblies
+        - Evolution Project\Library\ShaderCache
+        - Evolution Project\Library\ShaderCache\9
+        - Evolution Project\Library\ShaderCache\e
+        - Evolution Project\Library\StateCache
+        - Evolution Project\Library\StateCache\Hierarchy
+        - Evolution Project\Library\StateCache\SceneView
+        - Evolution Project\obj
+        - Evolution Project\obj\Debug
+        - Evolution Project\ProjectSettings
         - Evolution Project\Temp
+        - Evolution Project\Temp\__Backupscenes
         values:
         - path: Evolution Project
           label: Evolution Project
           level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\.vs
+          label: .vs
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\.vs\Evolution Project
+          label: Evolution Project
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\.vs\Evolution Project\v16
+          label: v16
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\.vs\Evolution Project\v16\Server
+          label: Server
+          level: 4
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\.vs\Evolution Project\v16\Server\sqlite3
+          label: sqlite3
+          level: 5
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Assets
+          label: Assets
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Assets\Prefabs
+          label: Prefabs
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Assets\Scenes
+          label: Scenes
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Assets\Scripts
+          label: Scripts
+          level: 2
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -543,9 +733,369 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
+        - path: Evolution Project\Library\gfu
+          label: gfu
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\gfu\cache
+          label: cache
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\metadata
+          label: metadata
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\metadata\00
+          label: 00
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\metadata\1b
+          label: 1b
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\metadata\24
+          label: 24
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\metadata\72
+          label: 72
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\metadata\85
+          label: 85
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\metadata\d5
+          label: d5
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\ScriptAssemblies
+          label: ScriptAssemblies
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\ShaderCache
+          label: ShaderCache
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\ShaderCache\9
+          label: 9
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\ShaderCache\e
+          label: e
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\StateCache
+          label: StateCache
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\StateCache\Hierarchy
+          label: Hierarchy
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Library\StateCache\SceneView
+          label: SceneView
+          level: 3
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\obj
+          label: obj
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\obj\Debug
+          label: Debug
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\ProjectSettings
+          label: ProjectSettings
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
         - path: Evolution Project\Temp
           label: Temp
           level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Evolution Project\Temp\__Backupscenes
+          label: __Backupscenes
+          level: 2
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -607,6 +1157,434 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Evolution Project\.vs
+        label: .vs
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\.vs\Evolution Project
+        label: Evolution Project
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\.vs\Evolution Project\v16
+        label: v16
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\.vs\Evolution Project\v16\.suo
+        label: .suo
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\.vs\Evolution Project\v16\.suo
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\.vs\Evolution Project\v16\.suo
+          projectPath: .vs\Evolution Project\v16\.suo
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\.vs\Evolution Project\v16\Server
+        label: Server
+        level: 4
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\.vs\Evolution Project\v16\Server\sqlite3
+        label: sqlite3
+        level: 5
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\.vs\Evolution Project\v16\Server\sqlite3\storage.ide
+        label: storage.ide
+        level: 6
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\.vs\Evolution Project\v16\Server\sqlite3\storage.ide
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\.vs\Evolution Project\v16\Server\sqlite3\storage.ide
+          projectPath: .vs\Evolution Project\v16\Server\sqlite3\storage.ide
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Assembly-CSharp.csproj
+        label: Assembly-CSharp.csproj
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assembly-CSharp.csproj
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assembly-CSharp.csproj
+          projectPath: Assembly-CSharp.csproj
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Assets
+        label: Assets
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Assets\Prefabs
+        label: Prefabs
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Assets\Prefabs\Food.prefab
+        label: Food.prefab
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Prefabs\Food.prefab
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Prefabs\Food.prefab
+          projectPath: Assets\Prefabs\Food.prefab
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Assets\Scenes
+        label: Scenes
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Assets\Scenes\SampleScene.unity
+        label: SampleScene.unity
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scenes\SampleScene.unity
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Assets\Scripts
+        label: Scripts
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Assets\Scripts\Creature.cs
+        label: Creature.cs
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\Creature.cs
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\Creature.cs
+          projectPath: Assets\Scripts\Creature.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Assets\Scripts\InitCreatures.cs
+        label: InitCreatures.cs
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\InitCreatures.cs
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\InitCreatures.cs
+          projectPath: Assets\Scripts\InitCreatures.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Assets\Scripts\InitFood.cs
+        label: InitFood.cs
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\InitFood.cs
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\InitFood.cs
+          projectPath: Assets\Scripts\InitFood.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Assets\Scripts\InitInverted2DEdges.cs
+        label: InitInverted2DEdges.cs
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\InitInverted2DEdges.cs
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\InitInverted2DEdges.cs
+          projectPath: Assets\Scripts\InitInverted2DEdges.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 5
+      - path: Evolution Project\Assets\Scripts\InitInverted2DEdges.cs.meta
+        label: InitInverted2DEdges.cs.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\InitInverted2DEdges.cs.meta
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\InitInverted2DEdges.cs.meta
+          projectPath: Assets\Scripts\InitInverted2DEdges.cs.meta
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 5
+      - path: Evolution Project\Assets\Scripts\World.cs
+        label: World.cs
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\World.cs
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\World.cs
+          projectPath: Assets\Scripts\World.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Assets\Scripts\World.cs.meta
+        label: World.cs.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\World.cs.meta
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\World.cs.meta
+          projectPath: Assets\Scripts\World.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Assets\Scripts\WorldController.cs
+        label: WorldController.cs
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\WorldController.cs
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\WorldController.cs
+          projectPath: Assets\Scripts\WorldController.cs
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Assets\Scripts\WorldController.cs.meta
+        label: WorldController.cs.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Assets\Scripts\WorldController.cs.meta
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Assets\Scripts\WorldController.cs.meta
+          projectPath: Assets\Scripts\WorldController.cs.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       - path: Evolution Project\Library
         label: Library
         level: 1
@@ -644,6 +1622,25 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 3
+      - path: Evolution Project\Library\CurrentLayout-default.dwlt
+        label: CurrentLayout-default.dwlt
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\CurrentLayout-default.dwlt
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\CurrentLayout-default.dwlt
+          projectPath: Library\CurrentLayout-default.dwlt
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: Evolution Project\Library\EditorInstance.json
         label: EditorInstance.json
         level: 2
@@ -663,6 +1660,1127 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
+      - path: Evolution Project\Library\gfu
+        label: gfu
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\gfu\cache
+        label: cache
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\gfu\cache\gitlocks.yaml
+        label: gitlocks.yaml
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\gfu\cache\gitlocks.yaml
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\gfu\cache\gitlocks.yaml
+          projectPath: Library\gfu\cache\gitlocks.yaml
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\gfu\cache\gitstatusentries.yaml
+        label: gitstatusentries.yaml
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\gfu\cache\gitstatusentries.yaml
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\gfu\cache\gitstatusentries.yaml
+          projectPath: Library\gfu\cache\gitstatusentries.yaml
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\gfu\cache\gittrackingstatus.yaml
+        label: gittrackingstatus.yaml
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\gfu\cache\gittrackingstatus.yaml
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\gfu\cache\gittrackingstatus.yaml
+          projectPath: Library\gfu\cache\gittrackingstatus.yaml
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\gfu\cache\repoinfo.yaml
+        label: repoinfo.yaml
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\gfu\cache\repoinfo.yaml
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\gfu\cache\repoinfo.yaml
+          projectPath: Library\gfu\cache\repoinfo.yaml
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\InspectorExpandedItems.asset
+        label: InspectorExpandedItems.asset
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\InspectorExpandedItems.asset
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\InspectorExpandedItems.asset
+          projectPath: Library\InspectorExpandedItems.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\metadata
+        label: metadata
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\metadata\00
+        label: 00
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75
+        label: 007d30b70d5df2b4797ecc6e6d196e75
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75
+          projectPath: Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75.info
+        label: 007d30b70d5df2b4797ecc6e6d196e75.info
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75.info
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75.info
+          projectPath: Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75.info
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\metadata\1b
+        label: 1b
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
+        label: 1b50cd1ce4266ce43af9a073675c8ce9
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
+          projectPath: Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
+        label: 1b50cd1ce4266ce43af9a073675c8ce9.info
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
+          projectPath: Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\metadata\24
+        label: 24
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\metadata\24\244b204ed44869a49941d548085fa08b
+        label: 244b204ed44869a49941d548085fa08b
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\24\244b204ed44869a49941d548085fa08b
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\24\244b204ed44869a49941d548085fa08b
+          projectPath: Library\metadata\24\244b204ed44869a49941d548085fa08b
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\metadata\72
+        label: 72
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\metadata\72\724c6368309844241be2cb37cfd35536
+        label: 724c6368309844241be2cb37cfd35536
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\72\724c6368309844241be2cb37cfd35536
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\72\724c6368309844241be2cb37cfd35536
+          projectPath: Library\metadata\72\724c6368309844241be2cb37cfd35536
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\metadata\85
+        label: 85
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
+        label: 85c88585ad8c21445b4c135ac36a2f98
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
+          projectPath: Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
+        label: 85c88585ad8c21445b4c135ac36a2f98.info
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
+          projectPath: Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Library\metadata\d5
+        label: d5
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
+        label: d538d45a9a8175b438e15aaed1f99975
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
+          projectPath: Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
+        label: d538d45a9a8175b438e15aaed1f99975.info
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
+          projectPath: Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies
+        label: ScriptAssemblies
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.dll
+        label: Assembly-CSharp.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Assembly-CSharp.dll
+          projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.pdb
+        label: Assembly-CSharp.pdb
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.pdb
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Assembly-CSharp.pdb
+          projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+        label: Assembly-CSharp-Editor-firstpass.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+          projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+        label: Unity.2D.Sprite.Editor.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+          projectPath: Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+        label: Unity.2D.Tilemap.Editor.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+          projectPath: Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+        label: Unity.CollabProxy.Editor.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+          projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+        label: Unity.Rider.Editor.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+          projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+        label: Unity.TextMeshPro.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+          projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+        label: Unity.TextMeshPro.Editor.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+          projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.Timeline.dll
+        label: Unity.Timeline.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.Timeline.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.Timeline.dll
+          projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+        label: Unity.Timeline.Editor.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+          projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+        label: Unity.VSCode.Editor.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+          projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+        label: UnityEditor.TestRunner.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+          projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+        label: UnityEditor.UI.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+          projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+        label: UnityEngine.TestRunner.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+          projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+        label: UnityEngine.UI.dll
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+          projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\ShaderCache
+        label: ShaderCache
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\ShaderCache\9
+        label: 9
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
+        label: 97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
+          projectPath: Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Library\ShaderCache\e
+        label: e
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
+        label: e0e153d52092c980ceb0bf7b684a190d.bin
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
+          projectPath: Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Library\ShaderCache\EditorEncounteredVariants
+        label: EditorEncounteredVariants
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\ShaderCache\EditorEncounteredVariants
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\ShaderCache\EditorEncounteredVariants
+          projectPath: Library\ShaderCache\EditorEncounteredVariants
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
+        label: shadercompiler-UnityShaderCompiler.exe0.log
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
+          projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\StateCache
+        label: StateCache
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\StateCache\Hierarchy
+        label: Hierarchy
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\StateCache\Hierarchy\7a4118-mainStage.json
+        label: 7a4118-mainStage.json
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\StateCache\Hierarchy\7a4118-mainStage.json
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\StateCache\Hierarchy\7a4118-mainStage.json
+          projectPath: Library\StateCache\Hierarchy\7a4118-mainStage.json
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\StateCache\SceneView
+        label: SceneView
+        level: 3
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
+        label: beb224-1b50cd1ce4266ce43a.json
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
+          projectPath: Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\Library\StateCache\SceneView\beb224-mainStage.json
+        label: beb224-mainStage.json
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Library\StateCache\SceneView\beb224-mainStage.json
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Library\StateCache\SceneView\beb224-mainStage.json
+          projectPath: Library\StateCache\SceneView\beb224-mainStage.json
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\obj
+        label: obj
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\obj\Debug
+        label: Debug
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+        label: Assembly-CSharp.csproj.CoreCompileInputs.cache
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+          projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+        label: Assembly-CSharp.csprojAssemblyReference.cache
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+          projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Evolution Project\ProjectSettings
+        label: ProjectSettings
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\ProjectSettings\TimeManager.asset
+        label: TimeManager.asset
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\ProjectSettings\TimeManager.asset
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\ProjectSettings\TimeManager.asset
+          projectPath: ProjectSettings\TimeManager.asset
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
       - path: Evolution Project\Temp
         label: Temp
         level: 1
@@ -681,6 +2799,43 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Evolution Project\Temp\__Backupscenes
+        label: __Backupscenes
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Evolution Project\Temp\__Backupscenes\0.backup
+        label: 0.backup
+        level: 3
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\__Backupscenes\0.backup
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\__Backupscenes\0.backup
+          projectPath: Temp\__Backupscenes\0.backup
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       - path: Evolution Project\Temp\UnityLockfile
         label: UnityLockfile
         level: 2
@@ -697,6 +2852,272 @@ MonoBehaviour:
           fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
             Project\Temp\UnityLockfile
           projectPath: Temp\UnityLockfile
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+        label: UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+          projectPath: Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+        label: UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+          projectPath: Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
+        label: UnityTempFile-061accbad38b14b448f66bd30e6456b3
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
+          projectPath: Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+        label: UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+          projectPath: Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+        label: UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+          projectPath: Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
+        label: UnityTempFile-737533742f57efa40ad2ac459064b64f
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
+          projectPath: Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
+        label: UnityTempFile-84d179b33d02cf8478d46be42d03418e
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
+          projectPath: Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
+        label: UnityTempFile-9c35404cc17225346a20e605e379ca5e
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
+          projectPath: Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+        label: UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+          projectPath: Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+        label: UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+          projectPath: Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
+        label: UnityTempFile-c4535f997de83be4d922e85824e03f1e
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
+          projectPath: Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+        label: UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+          projectPath: Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
+        label: UnityTempFile-e46073db4f09b15488a117f6b9cba121
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
+          projectPath: Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Evolution Project\Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
+        label: UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Evolution Project\Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
+          fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution
+            Project\Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
+          projectPath: Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
@@ -720,9 +3141,101 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
+    - path: Evolution Project\.vs\Evolution Project\v16\.suo
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\.vs\Evolution
+        Project\v16\.suo
+      projectPath: .vs\Evolution Project\v16\.suo
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\.vs\Evolution Project\v16\Server\sqlite3\storage.ide
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\.vs\Evolution
+        Project\v16\Server\sqlite3\storage.ide
+      projectPath: .vs\Evolution Project\v16\Server\sqlite3\storage.ide
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Assembly-CSharp.csproj
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Assets\Prefabs\Food.prefab
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Prefabs\Food.prefab
+      projectPath: Assets\Prefabs\Food.prefab
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Assets\Scenes\SampleScene.unity
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scenes\SampleScene.unity
+      projectPath: Assets\Scenes\SampleScene.unity
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Assets\Scripts\Creature.cs
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\Creature.cs
+      projectPath: Assets\Scripts\Creature.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Assets\Scripts\InitCreatures.cs
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitCreatures.cs
+      projectPath: Assets\Scripts\InitCreatures.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Assets\Scripts\InitFood.cs
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitFood.cs
+      projectPath: Assets\Scripts\InitFood.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Assets\Scripts\InitInverted2DEdges.cs
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitInverted2DEdges.cs
+      projectPath: Assets\Scripts\InitInverted2DEdges.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Evolution Project\Assets\Scripts\InitInverted2DEdges.cs.meta
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitInverted2DEdges.cs.meta
+      projectPath: Assets\Scripts\InitInverted2DEdges.cs.meta
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 5
+    - path: Evolution Project\Assets\Scripts\World.cs
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\World.cs
+      projectPath: Assets\Scripts\World.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Assets\Scripts\World.cs.meta
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\World.cs.meta
+      projectPath: Assets\Scripts\World.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Assets\Scripts\WorldController.cs
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\WorldController.cs
+      projectPath: Assets\Scripts\WorldController.cs
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Assets\Scripts\WorldController.cs.meta
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\WorldController.cs.meta
+      projectPath: Assets\Scripts\WorldController.cs.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
     - path: Evolution Project\Library\assetDatabase3
       fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\assetDatabase3
       projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\CurrentLayout-default.dwlt
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
       originalPath: 
       indexStatus: 0
       workTreeStatus: 3
@@ -732,21 +3245,357 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
+    - path: Evolution Project\Library\gfu\cache\gitlocks.yaml
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\InspectorExpandedItems.asset
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\InspectorExpandedItems.asset
+      projectPath: Library\InspectorExpandedItems.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75
+      projectPath: Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75.info
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75.info
+      projectPath: Library\metadata\00\007d30b70d5df2b4797ecc6e6d196e75.info
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
+      projectPath: Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
+      projectPath: Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\metadata\24\244b204ed44869a49941d548085fa08b
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\24\244b204ed44869a49941d548085fa08b
+      projectPath: Library\metadata\24\244b204ed44869a49941d548085fa08b
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\metadata\72\724c6368309844241be2cb37cfd35536
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\72\724c6368309844241be2cb37cfd35536
+      projectPath: Library\metadata\72\724c6368309844241be2cb37cfd35536
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
+      projectPath: Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
+      projectPath: Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
+      projectPath: Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
+      projectPath: Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.Timeline.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.Timeline.dll
+      projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+      projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+      projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
+      projectPath: Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
+      projectPath: Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Library\ShaderCache\EditorEncounteredVariants
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ShaderCache\EditorEncounteredVariants
+      projectPath: Library\ShaderCache\EditorEncounteredVariants
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\StateCache\Hierarchy\7a4118-mainStage.json
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\StateCache\Hierarchy\7a4118-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\7a4118-mainStage.json
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
+      projectPath: Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Library\StateCache\SceneView\beb224-mainStage.json
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\StateCache\SceneView\beb224-mainStage.json
+      projectPath: Library\StateCache\SceneView\beb224-mainStage.json
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\ProjectSettings\TimeManager.asset
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\ProjectSettings\TimeManager.asset
+      projectPath: ProjectSettings\TimeManager.asset
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Evolution Project\Temp\__Backupscenes\0.backup
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\__Backupscenes\0.backup
+      projectPath: Temp\__Backupscenes\0.backup
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
     - path: Evolution Project\Temp\UnityLockfile
       fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityLockfile
       projectPath: Temp\UnityLockfile
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    changedFilesText: 3 changed files
+    - path: Evolution Project\Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+      projectPath: Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+      projectPath: Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
+      projectPath: Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+      projectPath: Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+      projectPath: Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
+      projectPath: Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
+      projectPath: Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
+      projectPath: Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+      projectPath: Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+      projectPath: Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
+      projectPath: Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+      projectPath: Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
+      projectPath: Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Evolution Project\Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
+      fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
+      projectPath: Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    changedFilesText: 74 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2019-11-25T15:40:13.800-08:00
+      updatedTimeString: 2019-11-27T22:56:07.632-08:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2019-11-25T16:47:15.735-08:00
+      updatedTimeString: 2019-11-27T23:12:13.284-08:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2019-11-25T16:46:42.560-08:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -1053,7 +3902,7 @@ MonoBehaviour:
     updatedTimeString: 2019-11-25T15:40:14.874-08:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2019-11-25T15:40:14.852-08:00
+    updatedTimeString: 2019-11-27T23:12:13.284-08:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -1071,8 +3920,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0
-  repositoryProgressMessage: 
+  repositoryProgressValue: 1
+  repositoryProgressMessage: Listing changed files...
   appManagerProgressValue: 1
   appManagerProgressMessage: Initialized
   connections: []
@@ -1163,9 +4012,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 687
+    y: 688
     width: 999
-    height: 258
+    height: 257
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1193,7 +4042,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 62320000
     m_LastClickedID: 12898
-    m_ExpandedIDs: 00000000c82d0000b02f00003c3100004a310000
+    m_ExpandedIDs: 00000000d02d0000b82f00004631000054310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1218,10 +4067,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    scrollPos: {x: 0, y: 51}
+    m_SelectedIDs: 82320000
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000c82d0000b02f00003c3100004a310000
+    m_ExpandedIDs: ffffffff00000000d02d0000b82f00004631000054310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1246,8 +4095,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 82320000
+    m_LastClickedInstanceID: 12930
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000054320000ec310000
     m_RenameOverlay:
@@ -1337,13 +4186,13 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 277
-    height: 595
+    height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2a89ffff
-      m_LastClickedID: 0
+      m_SelectedIDs: 82320000
+      m_LastClickedID: 12930
       m_ExpandedIDs: 74fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1392,7 +4241,7 @@ MonoBehaviour:
     x: 277
     y: 73
     width: 720
-    height: 595
+    height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: beb224c92e5215049a190e573eb7ffcf
@@ -1404,9 +4253,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.2083602, y: -1.5916951, z: -6.659698}
+    m_Target: {x: 104.36045, y: 57.912777, z: -122.578125}
     speed: 2
-    m_Value: {x: 3.2083602, y: -1.5916951, z: -6.659698}
+    m_Value: {x: 104.36045, y: 57.912777, z: -122.578125}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1439,9 +4288,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 24.414883
+    m_Target: 226.2669
     speed: 2
-    m_Value: 24.414883
+    m_Value: 226.2669
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1491,7 +4340,7 @@ MonoBehaviour:
     x: 277
     y: 73
     width: 720
-    height: 595
+    height: 596
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
@@ -1506,8 +4355,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -360
     m_HBaseRangeMax: 360
-    m_VBaseRangeMin: -289
-    m_VBaseRangeMax: 289
+    m_VBaseRangeMin: -289.5
+    m_VBaseRangeMax: 289.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1526,9 +4375,9 @@ MonoBehaviour:
       x: 0
       y: 17
       width: 720
-      height: 578
+      height: 579
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 360, y: 289}
+    m_Translation: {x: 360, y: 289.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1536,14 +4385,14 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -360
-      y: -289
+      y: -289.5
       width: 720
-      height: 578
+      height: 579
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 720, y: 595}
+  m_LastWindowPixelSize: {x: 720, y: 596}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1570,7 +4419,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 687
+    y: 688
     width: 999
-    height: 258
+    height: 257
   m_ViewDataDictionary: {fileID: 0}

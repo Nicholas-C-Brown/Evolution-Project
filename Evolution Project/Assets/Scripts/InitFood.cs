@@ -11,7 +11,7 @@ public class InitFood : MonoBehaviour
     public GameObject Prefab;
 
     // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
         for (int i = 0; i < NumFood; i++)
         {

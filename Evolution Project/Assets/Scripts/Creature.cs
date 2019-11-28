@@ -10,7 +10,7 @@ public class Creature : MonoBehaviour
     public float turnSpeed;
 
     //AI
-    private Vector3 spawn; 
+    private Vector2 spawn;
 
     //Movement
     private Rigidbody2D myRigidbody2D;
@@ -43,11 +43,12 @@ public class Creature : MonoBehaviour
 
     private void AI()
     {
+
         if (foodCount < 1) Move();
         else if (transform.GetComponent<CircleCollider2D>().enabled ||
             myRigidbody2D.velocity.magnitude > 0) Deactivate();
-        else if(transform.position != spawn) MoveToSpawn();
-        
+        else if(Vector2.Distance(transform.position, spawn) > 0.1f) MoveToSpawn();
+
         ClampVelocity();
     }
 
