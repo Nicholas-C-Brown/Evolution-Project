@@ -63,9 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Creature.cs" />
+    <Compile Include="Assets\Scripts\CreatureController.cs" />
     <Compile Include="Assets\Scripts\Food.cs" />
-    <Compile Include="Assets\Scripts\InitCreatures.cs" />
-    <Compile Include="Assets\Scripts\InitFood.cs" />
+    <Compile Include="Assets\Scripts\FoodController.cs" />
+    <Compile Include="Assets\Scripts\State.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
     <Compile Include="Assets\Scripts\WorldController.cs" />
     <Reference Include="Unity.Timeline.Editor">

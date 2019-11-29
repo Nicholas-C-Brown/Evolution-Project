@@ -505,8 +505,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1459911109}
-  - component: {fileID: 1459911108}
-  - component: {fileID: 1459911110}
   - component: {fileID: 1459911111}
   m_Layer: 0
   m_Name: WorldController
@@ -515,21 +513,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1459911108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459911107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 244b204ed44869a49941d548085fa08b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumCreatures: 10
-  Radius: 4.5
-  Prefab: {fileID: 4490691452946359451, guid: 4f2728cf393d8d64da08956a987a3a8b, type: 3}
 --- !u!4 &1459911109
 Transform:
   m_ObjectHideFlags: 0
@@ -544,21 +527,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1459911110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459911107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 007d30b70d5df2b4797ecc6e6d196e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumFood: 50
-  MaxRadius: 4
-  Prefab: {fileID: 6533659026877490170, guid: 1b50cd1ce4266ce43af9a073675c8ce9, type: 3}
 --- !u!114 &1459911111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,12 +539,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c88585ad8c21445b4c135ac36a2f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeScale: 0.01
+  TimeScale: 10
+  world: {fileID: 528615042}
   TimeText: {fileID: 1548026764}
   RoundText: {fileID: 1305397988}
-  RoundCount: 5
-  RoundTime: 10
-  world: {fileID: 528615042}
+  RoundCount: 100
+  RoundTime: 60
+  CreaturePrefab: {fileID: 4490691452946359451, guid: 4f2728cf393d8d64da08956a987a3a8b,
+    type: 3}
+  NumCreatures: 20
+  CreatureSpawnRadius: 4.5
+  Speed: 5
+  TurnSpeed: 1
+  FoodPrefab: {fileID: 6533659026877490170, guid: 1b50cd1ce4266ce43af9a073675c8ce9,
+    type: 3}
+  NumFood: 10
+  FoodSpawnRadius: 4
 --- !u!1 &1548026762
 GameObject:
   m_ObjectHideFlags: 0

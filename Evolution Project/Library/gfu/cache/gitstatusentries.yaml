@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-11-27T23:12:13.284-08:00
-  initializedAtString: 2019-11-27T22:56:12.018-08:00
+  lastUpdatedAtString: 2019-11-28T20:27:55.765-08:00
+  initializedAtString: 2019-11-28T20:15:20.715-08:00
   entries:
   - path: Evolution Project\.vs\Evolution Project\v16\.suo
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\.vs\Evolution
@@ -30,15 +30,29 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Evolution Project\.vs\Evolution Project\v16\Server\sqlite3\storage.ide-shm
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\.vs\Evolution
+      Project\v16\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\Evolution Project\v16\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\.vs\Evolution Project\v16\Server\sqlite3\storage.ide-wal
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\.vs\Evolution
+      Project\v16\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\Evolution Project\v16\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Evolution Project\Assembly-CSharp.csproj
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Evolution Project\Assets\Prefabs\Food.prefab
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Prefabs\Food.prefab
-    projectPath: Assets\Prefabs\Food.prefab
+  - path: Evolution Project\Assets\Prefabs\Creature.prefab
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Prefabs\Creature.prefab
+    projectPath: Assets\Prefabs\Creature.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -54,39 +68,63 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Evolution Project\Assets\Scripts\CreatureController.cs
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\CreatureController.cs
+    projectPath: Assets\Scripts\CreatureController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Assets\Scripts\CreatureController.cs.meta
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\CreatureController.cs.meta
+    projectPath: Assets\Scripts\CreatureController.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Assets\Scripts\FoodController.cs
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\FoodController.cs
+    projectPath: Assets\Scripts\FoodController.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Assets\Scripts\FoodController.cs.meta
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\FoodController.cs.meta
+    projectPath: Assets\Scripts\FoodController.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Evolution Project\Assets\Scripts\InitCreatures.cs
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitCreatures.cs
     projectPath: Assets\Scripts\InitCreatures.cs
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
+  - path: Evolution Project\Assets\Scripts\InitCreatures.cs.meta
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitCreatures.cs.meta
+    projectPath: Assets\Scripts\InitCreatures.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Evolution Project\Assets\Scripts\InitFood.cs
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitFood.cs
     projectPath: Assets\Scripts\InitFood.cs
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
-  - path: Evolution Project\Assets\Scripts\InitInverted2DEdges.cs
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitInverted2DEdges.cs
-    projectPath: Assets\Scripts\InitInverted2DEdges.cs
+    workTreeStatus: 5
+  - path: Evolution Project\Assets\Scripts\InitFood.cs.meta
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitFood.cs.meta
+    projectPath: Assets\Scripts\InitFood.cs.meta
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Evolution Project\Assets\Scripts\InitInverted2DEdges.cs.meta
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\InitInverted2DEdges.cs.meta
-    projectPath: Assets\Scripts\InitInverted2DEdges.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Evolution Project\Assets\Scripts\World.cs
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\World.cs
-    projectPath: Assets\Scripts\World.cs
+  - path: Evolution Project\Assets\Scripts\State.cs
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\State.cs
+    projectPath: Assets\Scripts\State.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Assets\Scripts\World.cs.meta
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\World.cs.meta
-    projectPath: Assets\Scripts\World.cs.meta
+  - path: Evolution Project\Assets\Scripts\State.cs.meta
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\State.cs.meta
+    projectPath: Assets\Scripts\State.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -94,23 +132,11 @@ MonoBehaviour:
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\WorldController.cs
     projectPath: Assets\Scripts\WorldController.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Evolution Project\Assets\Scripts\WorldController.cs.meta
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Assets\Scripts\WorldController.cs.meta
-    projectPath: Assets\Scripts\WorldController.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Evolution Project\Library\assetDatabase3
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\assetDatabase3
     projectPath: Library\assetDatabase3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Evolution Project\Library\CurrentLayout-default.dwlt
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -162,21 +188,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
-    projectPath: Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
-    projectPath: Library\metadata\1b\1b50cd1ce4266ce43af9a073675c8ce9.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Evolution Project\Library\metadata\24\244b204ed44869a49941d548085fa08b
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\24\244b204ed44869a49941d548085fa08b
     projectPath: Library\metadata\24\244b204ed44869a49941d548085fa08b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Evolution Project\Library\metadata\24\244b204ed44869a49941d548085fa08b.info
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\24\244b204ed44869a49941d548085fa08b.info
+    projectPath: Library\metadata\24\244b204ed44869a49941d548085fa08b.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Evolution Project\Library\metadata\4f\4f2728cf393d8d64da08956a987a3a8b
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\4f\4f2728cf393d8d64da08956a987a3a8b
+    projectPath: Library\metadata\4f\4f2728cf393d8d64da08956a987a3a8b
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -190,26 +216,20 @@ MonoBehaviour:
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
     projectPath: Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
-    projectPath: Library\metadata\85\85c88585ad8c21445b4c135ac36a2f98.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
-    projectPath: Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
-    projectPath: Library\metadata\d5\d538d45a9a8175b438e15aaed1f99975.info
+  - path: Evolution Project\Library\metadata\c4\c4dfb63022d4b4549b0db88d5150da4b
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\c4\c4dfb63022d4b4549b0db88d5150da4b
+    projectPath: Library\metadata\c4\c4dfb63022d4b4549b0db88d5150da4b
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Library\metadata\c4\c4dfb63022d4b4549b0db88d5150da4b.info
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\metadata\c4\c4dfb63022d4b4549b0db88d5150da4b.info
+    projectPath: Library\metadata\c4\c4dfb63022d4b4549b0db88d5150da4b.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -306,39 +326,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Evolution Project\Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
-    projectPath: Library\ShaderCache\9\97b8c0435db3ea0b6d4fe0b7a159f4c8.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Evolution Project\Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
-    projectPath: Library\ShaderCache\e\e0e153d52092c980ceb0bf7b684a190d.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Evolution Project\Library\ShaderCache\EditorEncounteredVariants
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\ShaderCache\EditorEncounteredVariants
-    projectPath: Library\ShaderCache\EditorEncounteredVariants
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Evolution Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Evolution Project\Library\StateCache\Hierarchy\7a4118-mainStage.json
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\StateCache\Hierarchy\7a4118-mainStage.json
     projectPath: Library\StateCache\Hierarchy\7a4118-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Evolution Project\Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
-    projectPath: Library\StateCache\SceneView\beb224-1b50cd1ce4266ce43a.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -360,6 +350,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Evolution Project\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Evolution Project\ProjectSettings\TimeManager.asset
     fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\ProjectSettings\TimeManager.asset
     projectPath: ProjectSettings\TimeManager.asset
@@ -378,87 +374,123 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
-    projectPath: Temp\UnityTempFile-049b605f6b1932f43befdb6842e2de4f
+  - path: Evolution Project\Temp\UnityTempFile-2a1b4030f7dc2604eae043d4e1b8651e
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-2a1b4030f7dc2604eae043d4e1b8651e
+    projectPath: Temp\UnityTempFile-2a1b4030f7dc2604eae043d4e1b8651e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
-    projectPath: Temp\UnityTempFile-04ec8b675058f4742a96d7b242c810d1
+  - path: Evolution Project\Temp\UnityTempFile-2bdde6dea4498634aa9fde3237b2e220
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-2bdde6dea4498634aa9fde3237b2e220
+    projectPath: Temp\UnityTempFile-2bdde6dea4498634aa9fde3237b2e220
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
-    projectPath: Temp\UnityTempFile-061accbad38b14b448f66bd30e6456b3
+  - path: Evolution Project\Temp\UnityTempFile-33050590c67a0c143a51ac59a2619886
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-33050590c67a0c143a51ac59a2619886
+    projectPath: Temp\UnityTempFile-33050590c67a0c143a51ac59a2619886
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
-    projectPath: Temp\UnityTempFile-2442967d5bb1d4040994fd8abfb0c08d
+  - path: Evolution Project\Temp\UnityTempFile-335ed31287d49474088938d3d6bfc13e
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-335ed31287d49474088938d3d6bfc13e
+    projectPath: Temp\UnityTempFile-335ed31287d49474088938d3d6bfc13e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
-    projectPath: Temp\UnityTempFile-4357a9d853fce4d408ed30c2b4d41863
+  - path: Evolution Project\Temp\UnityTempFile-33653791af74bb245b87c0ae98d4f7f3
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-33653791af74bb245b87c0ae98d4f7f3
+    projectPath: Temp\UnityTempFile-33653791af74bb245b87c0ae98d4f7f3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
-    projectPath: Temp\UnityTempFile-737533742f57efa40ad2ac459064b64f
+  - path: Evolution Project\Temp\UnityTempFile-34c52f4e79a7bf84a9175c9a205acd3f
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-34c52f4e79a7bf84a9175c9a205acd3f
+    projectPath: Temp\UnityTempFile-34c52f4e79a7bf84a9175c9a205acd3f
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
-    projectPath: Temp\UnityTempFile-84d179b33d02cf8478d46be42d03418e
+  - path: Evolution Project\Temp\UnityTempFile-3e9a96eba25301e4a8f278f9e7637759
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-3e9a96eba25301e4a8f278f9e7637759
+    projectPath: Temp\UnityTempFile-3e9a96eba25301e4a8f278f9e7637759
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
-    projectPath: Temp\UnityTempFile-9c35404cc17225346a20e605e379ca5e
+  - path: Evolution Project\Temp\UnityTempFile-46263db123e476042a808bd1c3cdd96a
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-46263db123e476042a808bd1c3cdd96a
+    projectPath: Temp\UnityTempFile-46263db123e476042a808bd1c3cdd96a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
-    projectPath: Temp\UnityTempFile-9e9cca5217a437747b7b35ce134318ae
+  - path: Evolution Project\Temp\UnityTempFile-4900085653461484ea3b7f8765675ad1
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-4900085653461484ea3b7f8765675ad1
+    projectPath: Temp\UnityTempFile-4900085653461484ea3b7f8765675ad1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
-    projectPath: Temp\UnityTempFile-a598895dd98325a448b5bf99f4ce4c06
+  - path: Evolution Project\Temp\UnityTempFile-5f0afb1896eb602489957fcd983fcc92
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-5f0afb1896eb602489957fcd983fcc92
+    projectPath: Temp\UnityTempFile-5f0afb1896eb602489957fcd983fcc92
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
-    projectPath: Temp\UnityTempFile-c4535f997de83be4d922e85824e03f1e
+  - path: Evolution Project\Temp\UnityTempFile-64e8fe424ecf3f64e90bbee016cf0570
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-64e8fe424ecf3f64e90bbee016cf0570
+    projectPath: Temp\UnityTempFile-64e8fe424ecf3f64e90bbee016cf0570
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
-    projectPath: Temp\UnityTempFile-df0d1e4c7cdbc4f4ba717ffba0e67528
+  - path: Evolution Project\Temp\UnityTempFile-6f50e15c2e7ee474bbc7d4676fbadf61
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-6f50e15c2e7ee474bbc7d4676fbadf61
+    projectPath: Temp\UnityTempFile-6f50e15c2e7ee474bbc7d4676fbadf61
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
-    projectPath: Temp\UnityTempFile-e46073db4f09b15488a117f6b9cba121
+  - path: Evolution Project\Temp\UnityTempFile-73f2a925bcbf20f4b91863ba67cb31e9
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-73f2a925bcbf20f4b91863ba67cb31e9
+    projectPath: Temp\UnityTempFile-73f2a925bcbf20f4b91863ba67cb31e9
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Evolution Project\Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
-    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
-    projectPath: Temp\UnityTempFile-f6e6b362ec25b724ea00be1ed18aeac7
+  - path: Evolution Project\Temp\UnityTempFile-8d4e8e025f3b4e842af36e057bd50de1
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-8d4e8e025f3b4e842af36e057bd50de1
+    projectPath: Temp\UnityTempFile-8d4e8e025f3b4e842af36e057bd50de1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Temp\UnityTempFile-ad7f68c72d419ec4a93f048026a0b564
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-ad7f68c72d419ec4a93f048026a0b564
+    projectPath: Temp\UnityTempFile-ad7f68c72d419ec4a93f048026a0b564
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Temp\UnityTempFile-c0a2b4f0c8882ee4dba596cec4644a0a
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-c0a2b4f0c8882ee4dba596cec4644a0a
+    projectPath: Temp\UnityTempFile-c0a2b4f0c8882ee4dba596cec4644a0a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Temp\UnityTempFile-c216050801446214aac6ab6ee2d6ce1d
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-c216050801446214aac6ab6ee2d6ce1d
+    projectPath: Temp\UnityTempFile-c216050801446214aac6ab6ee2d6ce1d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Temp\UnityTempFile-c30278d405b80034f992e2d5da1da556
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-c30278d405b80034f992e2d5da1da556
+    projectPath: Temp\UnityTempFile-c30278d405b80034f992e2d5da1da556
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Temp\UnityTempFile-cae6dce7296109044944ac9b4d0c809e
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-cae6dce7296109044944ac9b4d0c809e
+    projectPath: Temp\UnityTempFile-cae6dce7296109044944ac9b4d0c809e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Evolution Project\Temp\UnityTempFile-f6e51d6d095ba1d4f9f0723718b2703a
+    fullPath: D:\SneakyLunatic69\Documents\GitHub\Evolution-Project\Evolution Project\Temp\UnityTempFile-f6e51d6d095ba1d4f9f0723718b2703a
+    projectPath: Temp\UnityTempFile-f6e51d6d095ba1d4f9f0723718b2703a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

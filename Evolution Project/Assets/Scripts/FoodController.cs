@@ -2,16 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InitFood : MonoBehaviour
+public class FoodController
 {
 
-    public int NumFood;
-    public float MaxRadius;
+    private int NumFood;
+    private float MaxRadius;
 
-    public GameObject Prefab;
+    private GameObject Prefab;
+
+    public FoodController(GameObject Prefab, int NumFood, float MaxRadius)
+    {
+        this.Prefab = Prefab;
+        this.NumFood = NumFood;
+        this.MaxRadius = MaxRadius;
+    }
 
     // Start is called before the first frame update
-    public void Init()
+    public void SpawnFood()
     {
         for (int i = 0; i < NumFood; i++)
         {
@@ -22,9 +29,14 @@ public class InitFood : MonoBehaviour
             float x = Radius * Mathf.Cos(angle);
             float y = Radius * Mathf.Sin(angle);
 
-            GameObject newCreature = Instantiate(Prefab);
+            GameObject newCreature = Object.Instantiate(Prefab);
             newCreature.transform.position = new Vector3(x, y, 1);
         }
+    }
+
+    public void DestroyFood()
+    {
+
     }
 
 }

@@ -5,9 +5,8 @@ using UnityEngine;
 public class Creature : MonoBehaviour
 {
 
-    [Header("Statistics")]
-    public float speed;
-    public float turnSpeed;
+    private float speed;
+    private float turnSpeed;
 
     //AI
     private Vector2 spawn;
@@ -17,7 +16,9 @@ public class Creature : MonoBehaviour
     private float theta;
 
     //Food
-    private float foodCount;
+    public float foodCount { get; set; }
+
+    public State CurrentState { get; set; }
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,8 @@ public class Creature : MonoBehaviour
 
         //Food
         foodCount = 0;
+
+        CurrentState = State.ALIVE;
     }
 
     // Update is called once per frame
@@ -57,7 +60,8 @@ public class Creature : MonoBehaviour
         theta += Random.Range(-turnSpeed, turnSpeed);
         float x = Mathf.Cos(theta) * speed;
         float y = Mathf.Sin(theta) * speed;
-        myRigidbody2D.AddForce(new Vector2(x, y).normalized);
+
+        myRigidbody2D.AddForce(new Vector2(x, y));
     }
 
     private void Deactivate()
@@ -83,6 +87,18 @@ public class Creature : MonoBehaviour
         myRigidbody2D.velocity = new Vector2(x, y);
     }
 
+    public void ResetCreature()
+    {
+        foodCount = 0;
+
+        transform.GetComponent<CircleCollider2D>().enabled = true;
+
+        SpriteRenderer sr = transform.GetComponent<SpriteRenderer>();
+        sr.sortingOrder = 0;
+        sr.color = new Color(1, 1, 1, 1);
+
+    }
+
     #endregion
 
     #region FoodAPI
@@ -97,4 +113,20 @@ public class Creature : MonoBehaviour
     }
 
     #endregion
+
+    public float GetFoodCount()
+    {
+        return foodCount;
+    }
+
+    public void SetSpeed(float speed)
+    {
+        if (speed > 0) this.speed = speed;
+    }
+
+    public void SetTurnSpeed(float turnSpeed)
+    {
+        if (turnSpeed > 0) this.turnSpeed = turnSpeed;
+    }
+
 }

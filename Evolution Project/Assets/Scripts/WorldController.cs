@@ -6,8 +6,11 @@ using UnityEngine.UI;
 
 public class WorldController : MonoBehaviour
 {
-
+    [Header("Unity Settings")]
     public float TimeScale;
+
+    [Header("World Settings")]
+    public World world;
 
     public Text TimeText;
     public Text RoundText;
@@ -16,13 +19,21 @@ public class WorldController : MonoBehaviour
     public int RoundTime;
     private float currentTime;
 
-    public World world;
-    private InitCreatures initCreatures;
-    private InitFood initFood;
+    [Header("Creature Settings")]
+    public GameObject CreaturePrefab;
+    public int NumCreatures;
+    public float CreatureSpawnRadius;
+    public float Speed;
+    public float TurnSpeed;
 
-    private Creature[] creatures;
-    private Food[] foods;
-    private bool waiting;
+    private CreatureController creatureController;
+
+    [Header("Food Settings")]
+    public GameObject FoodPrefab;
+    public int NumFood;
+    public float FoodSpawnRadius;
+
+    private FoodController foodController;
 
     private void Start()
     {
@@ -30,8 +41,10 @@ public class WorldController : MonoBehaviour
         currentTime = 0;
         currentRound = 1;
 
-        initCreatures = transform.GetComponent<InitCreatures>();
-        initFood = transform.GetComponent<InitFood>();
+        creatureController = new CreatureController(CreaturePrefab, NumCreatures, CreatureSpawnRadius, Speed, TurnSpeed);
+        foodController = new FoodController(FoodPrefab, NumFood, FoodSpawnRadius);
+
+        world.Init();
 
     }
 
@@ -46,14 +59,13 @@ public class WorldController : MonoBehaviour
 
             if (currentTime == 0)
             {
-                Init();
+                Spawn();
             }
 
             currentTime += Time.deltaTime;
 
-            if ((currentTime > RoundTime) && !waiting)
+            if ((currentTime > RoundTime))
             {
-                UpdateArrays();
                 ClearWorld();
                 currentTime = 0;
                 currentRound++;
@@ -69,37 +81,18 @@ public class WorldController : MonoBehaviour
         }
     }
 
-    #region Update Methods
-
-    void UpdateArrays()
-    {
-        creatures = FindObjectsOfType<Creature>();
-        foods = FindObjectsOfType<Food>();
-    }
-
-
-    #endregion
-
     #region World Generation Methods
 
-    void Init()
+    void Spawn()
     {
-        world.Init();
-        initCreatures.Init();
-        initFood.Init();
+        creatureController.SpawnCreatures();
+        foodController.SpawnFood();
     }
 
     void ClearWorld()
     {
-        foreach (Food f in foods)
-        {
-            Destroy(f.gameObject);
-        }
-
-        foreach (Creature c in creatures)
-        {
-            Destroy(c.gameObject);
-        }
+        creatureController.DestroyCreatures();
+        foodController.DestroyFood();
     }
 
     #endregion
