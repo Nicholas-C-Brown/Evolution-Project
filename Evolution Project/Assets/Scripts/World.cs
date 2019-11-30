@@ -11,8 +11,11 @@ public class World : MonoBehaviour
     // Use this for initialization
     public void Init()
     {
+
         EdgeCollider2D edgeCollider = GetComponent<EdgeCollider2D>();
         Vector2[] points = new Vector2[NumEdges + 1];
+
+        Radius += edgeCollider.edgeRadius/2;
 
         for (int i = 0; i < NumEdges; i++)
         {
@@ -24,7 +27,7 @@ public class World : MonoBehaviour
         }
         points[NumEdges] = points[0];
          
-         edgeCollider.points = points;
+        edgeCollider.points = points;
      }
 
     private void OnDrawGizmos()

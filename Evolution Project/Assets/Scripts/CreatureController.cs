@@ -5,62 +5,113 @@ using UnityEngine;
 
 public class CreatureController
 {
-    private GameObject Prefab;
-    private float Radius;
+    private GameObject prefab;
 
-    private GameObject[] creatures;
+    private List<GameObject> creatures;
 
-    public CreatureController(GameObject Prefab, int NumCreatures, float Radius, float Speed, float TurnSpeed)
+    public int BirthCount { get; private set; }
+    public int DeathCount { get; private set; }
+
+    public CreatureController(GameObject Prefab)
     {
-        this.Prefab = Prefab;
-        this.Radius = Radius;
-
-        InitCreatures(NumCreatures, Speed, TurnSpeed);
+        prefab = Prefab;
+        ResetCounts();
     }
 
-    private void InitCreatures(int num, float speed, float turnSpeed)
+    public void InitCreatures(int num, float speed)
     {
-        creatures = new GameObject[num];
+        creatures = new List<GameObject>(num);
 
         for (int i = 0; i<num; i++)
         {
-            creatures[i] = Object.Instantiate(Prefab);
-            creatures[i].GetComponent<Creature>().SetSpeed(speed);
-            creatures[i].GetComponent<Creature>().SetTurnSpeed(turnSpeed);
-            creatures[i].SetActive(false);
+            CreateNewCreature(speed);
         }
 
     }
 
-    public void SpawnCreatures()
+    public void SpawnCreatures(float Radius)
     {
         int i = 0;
 
-        foreach (GameObject c in creatures)
+        foreach (GameObject go in creatures)
         {
-            if (c.GetComponent<Creature>().CurrentState == State.ALIVE) { 
-                float angle = 2 * Mathf.PI * i / creatures.Length;
+            if (go.GetComponent<Creature>().CurrentState == State.ALIVE) { 
+                float angle = 2 * Mathf.PI * i / creatures.Count;
                 float x = Radius * Mathf.Cos(angle);
                 float y = Radius * Mathf.Sin(angle);
 
-                c.transform.position = new Vector3(x, y, 1);
-                c.SetActive(true);
+                go.transform.position = new Vector3(x, y, 1);
+                go.SetActive(true);
             }
             i++;
         }
     }
 
-    public void DestroyCreatures()
+    public void UpdateCreatures()
     {
-        foreach (GameObject c in creatures)
-        {
-            Creature creatureComponent = c.GetComponent<Creature>();
 
-            if (creatureComponent.GetFoodCount() < 1) creatureComponent.CurrentState = State.DEAD;
-            creatureComponent.ResetCreature();
-            c.SetActive(false);
+        foreach (GameObject go in creatures)
+        {
+            Creature creatureComponent = go.GetComponent<Creature>();
+            creatureComponent.UpdateState();
+            creatureComponent.ResetFoodCount();
         }
+
+        UpdateCreatureList();
     }
 
-    
+    private void UpdateCreatureList()
+    {
+
+        ResetCounts();
+        for (int i = 0; i < creatures.Count; i++)
+        {
+            Creature c = creatures[i].GetComponent<Creature>();
+
+            if (c.CurrentState == State.REPRODUCE)
+            {
+                CreateNewCreature(c.Speed);
+                c.CurrentState = State.ALIVE;
+                BirthCount++;
+            }
+
+            if (c.CurrentState == State.DEAD && c.gameObject.activeSelf)
+            {
+                c.gameObject.SetActive(false);
+                DeathCount++;
+            }
+        }
+
+        
+    }
+
+    private void CreateNewCreature(float Speed)
+    {
+        GameObject creature = Object.Instantiate(prefab);
+        creatures.Add(creature);
+
+        int i = creatures.IndexOf(creature);
+
+        creatures[i].GetComponent<Creature>().Init();
+        creatures[i].GetComponent<Creature>().Speed = Speed;
+        creatures[i].SetActive(false);
+    }
+
+    public void ResetCounts()
+    {
+        BirthCount = 0;
+        DeathCount = 0;
+    }
+
+    public int GetCreatureCount()
+    {
+        int count = 0;
+        foreach (GameObject go in creatures)
+        {
+            if (!(go.GetComponent<Creature>().CurrentState == State.DEAD)) count++;
+        }
+
+        return count;
+    }
+
 }

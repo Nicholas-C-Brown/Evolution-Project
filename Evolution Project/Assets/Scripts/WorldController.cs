@@ -7,15 +7,18 @@ using UnityEngine.UI;
 public class WorldController : MonoBehaviour
 {
     [Header("Unity Settings")]
+    [Range(1.0f, 10.0f)]
     public float TimeScale;
+    private float fixedDeltaTime;
 
     [Header("World Settings")]
     public World world;
 
-    public Text TimeText;
     public Text RoundText;
     public int RoundCount;
     private int currentRound;
+
+    public Text TimeText;
     public int RoundTime;
     private float currentTime;
 
@@ -24,7 +27,12 @@ public class WorldController : MonoBehaviour
     public int NumCreatures;
     public float CreatureSpawnRadius;
     public float Speed;
-    public float TurnSpeed;
+
+    public Text CreatureCountText;
+    public Text CreatureBirthText;
+    public Text CreatureDeathText;
+
+    private int creatureTotal;
 
     private CreatureController creatureController;
 
@@ -35,24 +43,37 @@ public class WorldController : MonoBehaviour
 
     private FoodController foodController;
 
+
+
     private void Start()
     {
 
         currentTime = 0;
         currentRound = 1;
 
-        creatureController = new CreatureController(CreaturePrefab, NumCreatures, CreatureSpawnRadius, Speed, TurnSpeed);
-        foodController = new FoodController(FoodPrefab, NumFood, FoodSpawnRadius);
+        creatureController = new CreatureController(CreaturePrefab);
+        foodController = new FoodController(FoodPrefab);
 
         world.Init();
+        creatureController.InitCreatures(NumCreatures, Speed);
 
+    }
+
+    private void Awake()
+    {
+        fixedDeltaTime = Time.fixedDeltaTime;
     }
 
     // Update is called once per frame
     private void Update()
     {
 
-        Time.timeScale = TimeScale;
+        if (TimeScale > 0 && TimeScale <= 10)
+        {
+            Time.timeScale = TimeScale;
+            Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
+        }
+
 
         if (currentRound <= RoundCount)
         {
@@ -69,6 +90,7 @@ public class WorldController : MonoBehaviour
                 ClearWorld();
                 currentTime = 0;
                 currentRound++;
+                creatureTotal += creatureController.GetCreatureCount();
             }
 
             DrawToCanvas();
@@ -76,8 +98,8 @@ public class WorldController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Ending Simulation");
-            Application.Quit();
+            Debug.Log("End of Simulation");
+            Debug.Log("Average # of Creatures: " + (creatureTotal / RoundCount).ToString());
         }
     }
 
@@ -85,24 +107,28 @@ public class WorldController : MonoBehaviour
 
     void Spawn()
     {
-        creatureController.SpawnCreatures();
-        foodController.SpawnFood();
+        creatureController.SpawnCreatures(CreatureSpawnRadius);
+        foodController.SpawnFood(NumFood, FoodSpawnRadius);
     }
 
     void ClearWorld()
     {
-        creatureController.DestroyCreatures();
+        creatureController.UpdateCreatures();
         foodController.DestroyFood();
     }
 
     #endregion
 
+
     #region Canvas
 
-    void DrawToCanvas()
+        void DrawToCanvas()
     {
         RoundText.text = "Round: " + currentRound.ToString() + " / " + RoundCount.ToString();
         TimeText.text = "Round Time: " + Math.Round(currentTime, 2).ToString();
+        CreatureCountText.text = "Creatures: " + creatureController.GetCreatureCount().ToString() + " (Net: " + (creatureController.BirthCount - creatureController.DeathCount).ToString() + ")";
+        CreatureBirthText.text = "Births: " + creatureController.BirthCount.ToString();
+        CreatureDeathText.text = "Deaths: " + creatureController.DeathCount.ToString();
     }
 
     #endregion

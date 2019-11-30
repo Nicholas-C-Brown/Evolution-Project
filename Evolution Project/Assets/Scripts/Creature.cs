@@ -5,34 +5,37 @@ using UnityEngine;
 public class Creature : MonoBehaviour
 {
 
+    //Movement
+    public float Speed {
+        get { return speed; }
+        set {
+            if (value > 0){
+                speed = value;
+                turnSpeed = speed / 5;
+            }
+        }
+    }
     private float speed;
     private float turnSpeed;
-
-    //AI
-    private Vector2 spawn;
-
-    //Movement
     private Rigidbody2D myRigidbody2D;
     private float theta;
 
     //Food
-    public float foodCount { get; set; }
+    public float FoodCount { get; private set; }
 
+    //State
     public State CurrentState { get; set; }
 
-    // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
-        //AI
-        spawn = transform.position;
-
         //Movement
         myRigidbody2D = GetComponent<Rigidbody2D>();
         theta = Random.Range(0, 2 * Mathf.PI);
 
         //Food
-        foodCount = 0;
+        FoodCount = 0;
 
+        //State
         CurrentState = State.ALIVE;
     }
 
@@ -46,14 +49,11 @@ public class Creature : MonoBehaviour
 
     private void AI()
     {
-
-        if (foodCount < 1) Move();
-        else if (transform.GetComponent<CircleCollider2D>().enabled ||
-            myRigidbody2D.velocity.magnitude > 0) Deactivate();
-        else if(Vector2.Distance(transform.position, spawn) > 0.1f) MoveToSpawn();
-
-        ClampVelocity();
+        if (FoodCount < 2) Move();
+        else Stop();
     }
+
+    #region Movement
 
     private void Move()
     {
@@ -62,21 +62,13 @@ public class Creature : MonoBehaviour
         float y = Mathf.Sin(theta) * speed;
 
         myRigidbody2D.AddForce(new Vector2(x, y));
+
+        ClampVelocity();
     }
 
-    private void Deactivate()
+    private void Stop()
     {
-        transform.GetComponent<CircleCollider2D>().enabled = false;
         myRigidbody2D.velocity = new Vector2(0, 0);
-
-        SpriteRenderer sr = transform.GetComponent<SpriteRenderer>();
-        sr.sortingOrder = -1;
-        sr.color = new Color(1, 1, 1, 0.5f);
-    }
-
-    private void MoveToSpawn()
-    {
-        transform.position = Vector2.Lerp(transform.position, spawn, (speed * Time.deltaTime)/Vector2.Distance(transform.position, spawn));
     }
 
     private void ClampVelocity()
@@ -87,46 +79,38 @@ public class Creature : MonoBehaviour
         myRigidbody2D.velocity = new Vector2(x, y);
     }
 
-    public void ResetCreature()
+    #endregion Movement
+
+    #region CreatureController Functions
+
+    public void UpdateState()
     {
-        foodCount = 0;
-
-        transform.GetComponent<CircleCollider2D>().enabled = true;
-
-        SpriteRenderer sr = transform.GetComponent<SpriteRenderer>();
-        sr.sortingOrder = 0;
-        sr.color = new Color(1, 1, 1, 1);
-
+        if (FoodCount == 0) CurrentState = State.DEAD;
+        else if (FoodCount == 1) CurrentState = State.ALIVE;
+        else if (FoodCount == 2) CurrentState = State.REPRODUCE;
+        else throw new UnityException("Creature food count is out of bounds");
     }
 
-    #endregion
+    public void ResetFoodCount()
+    {
+        FoodCount = 0;
+    }
+
+    #endregion CreatureController Functions
 
     #region FoodAPI
 
     public void GatherFood(GameObject food)
     {
-        if(foodCount < 1)
+        if (FoodCount < 2)
         {
-            foodCount = 1;
+            FoodCount++;
             Destroy(food);
         }
     }
 
-    #endregion
+    #endregion FoodAPI
 
-    public float GetFoodCount()
-    {
-        return foodCount;
-    }
-
-    public void SetSpeed(float speed)
-    {
-        if (speed > 0) this.speed = speed;
-    }
-
-    public void SetTurnSpeed(float turnSpeed)
-    {
-        if (turnSpeed > 0) this.turnSpeed = turnSpeed;
-    }
+    #endregion AI
 
 }

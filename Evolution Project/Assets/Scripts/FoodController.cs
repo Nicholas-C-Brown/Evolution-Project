@@ -5,38 +5,33 @@ using UnityEngine;
 public class FoodController
 {
 
-    private int NumFood;
-    private float MaxRadius;
-
     private GameObject Prefab;
 
-    public FoodController(GameObject Prefab, int NumFood, float MaxRadius)
+    public FoodController(GameObject Prefab)
     {
         this.Prefab = Prefab;
-        this.NumFood = NumFood;
-        this.MaxRadius = MaxRadius;
     }
 
     // Start is called before the first frame update
-    public void SpawnFood()
+    public void SpawnFood(int num, float maxRadius)
     {
-        for (int i = 0; i < NumFood; i++)
+        for (int i = 0; i < num; i++)
         {
+            float Radius = Random.Range(0, maxRadius);
 
-            float Radius = Random.Range(0, MaxRadius);
-
-            float angle = 2 * Mathf.PI * i / NumFood;
+            float angle = 2 * Mathf.PI * i / num;
             float x = Radius * Mathf.Cos(angle);
             float y = Radius * Mathf.Sin(angle);
 
-            GameObject newCreature = Object.Instantiate(Prefab);
-            newCreature.transform.position = new Vector3(x, y, 1);
+            GameObject newFood = Object.Instantiate(Prefab);
+            newFood.transform.position = new Vector3(x, y, 1);
         }
     }
 
     public void DestroyFood()
     {
-
+        Food[] food = Object.FindObjectsOfType<Food>();
+        foreach (Food f in food) Object.Destroy(f.gameObject);
     }
 
 }
